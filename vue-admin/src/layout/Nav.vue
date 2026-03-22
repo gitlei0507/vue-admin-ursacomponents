@@ -1,0 +1,19 @@
+<template>
+    <el-header class="border-b flex items-center justify-between px-4 bg-white">
+        <div class="text-gray-600"></div>
+        <div class="flex items-center gap-2">
+            <el-avatar :size="30" :src="userInfo.avatar" />
+            <span class="text-sm">用户：{{ userInfo.username }}</span>
+            <span class="text-sm">角色：{{ showRole }}</span>
+            <el-button type="danger" @click="logout">注销</el-button>
+        </div>
+    </el-header>
+</template>
+
+<script setup>
+    import { useNav } from '@/composables/useNav';
+
+    const { userInfo, showRole, logout } = useNav()
+</script>
+
+<style scoped></style>

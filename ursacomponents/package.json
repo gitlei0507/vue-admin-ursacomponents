@@ -1,0 +1,37 @@
+{
+    "name": "ursacomponents",
+    "version": "0.1.0",
+    "description": "Ursa 通用组件库",
+    "type": "module",
+    "main": "./dist/ursacomponents.umd.js",
+    "module": "./dist/ursacomponents.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/ursacomponents.es.js",
+            "require": "./dist/ursacomponents.umd.js"
+        },
+        "./style.css": "./dist/ursacomponents.css"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "peerDependencies": {
+        "vue": "^3.5.0",
+        "element-plus": "^2.13.0",
+        "@element-plus/icons-vue": "^2.3.0",
+        "vue-router": "^4.6.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^6.0.3",
+        "@element-plus/icons-vue": "^2.3.2",
+        "element-plus": "^2.13.2",
+        "vite": "^7.3.1",
+        "vue": "^3.5.27",
+        "vue-router": "^4.6.4"
+    }
+}
